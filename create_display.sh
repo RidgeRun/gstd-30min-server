@@ -6,5 +6,5 @@ echo "========================"
 
 gst-client pipeline_delete display
 gst-client pipeline_create display \
-interpipesrc listen-to=camera accept-events=false accept-eos-event=false enable-sync=false ! \
+interpipesrc name=src listen-to=camera accept-events=false accept-eos-event=false enable-sync=false ! \
 nvoverlaysink sync=false async=false
