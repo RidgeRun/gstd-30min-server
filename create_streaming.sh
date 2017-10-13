@@ -10,4 +10,4 @@ interpipesrc name=src format=time listen-to=camera accept-events=false accept-eo
 caps="video/x-raw,width=1920,height=1080,format=I420,framerate=30/1" ! \
 omxvp8enc iframeinterval=10 ! \
 video/x-vp8,mapping=/ridgerun ! \
-rtspsink service=12345
+rtspsink service=54321
