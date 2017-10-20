@@ -6,5 +6,5 @@ echo "========================"
 
 gst-client pipeline_delete display
 gst-client pipeline_create display \
-interpipesrc name=src listen-to=camera accept-events=false accept-eos-event=false enable-sync=false ! \
+interpipesrc name=display listen-to=camera accept-events=false accept-eos-event=false enable-sync=false allow-renegotiation=false ! \
 xvimagesink sync=false async=false

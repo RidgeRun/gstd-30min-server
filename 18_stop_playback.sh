@@ -4,11 +4,11 @@ echo "========================"
 echo "Stoping display pipeline"
 echo "========================"
 
-gst-client element_set display src listen-to camera
-gst-client element_set snapshot src listen-to camera
-gst-client element_set streaming src listen-to camera
-gst-client element_set reacording src listen-to camera
+gst-client element_set display display listen-to camera
+gst-client element_set snapshot snapshot listen-to camera
+gst-client element_set streaming streaming listen-to camera
+gst-client element_set recording recording listen-to camera
 gst-client pipeline_stop playback
 
 # Mux wont play again
-./create_playback.sh
+./13_create_playback.sh
