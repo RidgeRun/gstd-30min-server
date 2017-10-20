@@ -11,4 +11,4 @@ gst-client element_set recording recording listen-to camera
 gst-client pipeline_stop playback
 
 # Mux wont play again
-./13_create_playback.sh
+./12_create_playback.sh
